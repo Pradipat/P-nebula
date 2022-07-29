@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: black;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+nav{
+    text-transform: uppercase;
+    align-items:  center;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    padding: 0 5vw;
+}
+.nav-item , .nav-social{
+    display: flex;
+}
+nav div{
+    padding: 0 1.5em;
+    line-height: 2em;
+}
+#logo{
+    height: 2rem;
+}
+.content{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+.content iframe{
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+.logo-rise img{
+    height: 0.8rem;
+}
+.content-2 img{
+    width: 99vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* talent */
+.talent-bg{
+    position: relative;
+    padding-top: 10rem;
+    height: 110vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.left-top-dot{
+    position: relative;
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    left: 15%;
+}
+.left-top-line{
+    position: absolute;
+    border: 0.5px solid white;
+    width: 100%;
+    top: 30%;
+}
+.left-top-asset{
+    position: relative;
+    height: 10%;
+    top: 0%;
+    width: 20%;
+    animation: leftfadein 1.5s 0s ease-out;
+    opacity: 1;
+}
+.left-top-bar{
+    position: absolute;
+    top: 0%;
+    width: 70%;
+    opacity: 0.24;
+}
+.dot-animetion{
+    width: 10%;
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    animation: buttomfadein 1.5s 0s ease-out;
+    opacity: 1;
+}
+.circle , .circle-animation{
+    position: absolute;
+    right: -2%;
+    top :10%;
+    width: 35%;
+}
+.circle-animation{
+    opacity: 1;
+    animation: opacity1fadein 1.5s 0s ease-out;
+}
+.circle{
+    opacity: 0.24;
+    animation: opacityfadein 1.5s 0s ease-out;
+}
+.talent-container{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+.talent-info{
+    position: relative;
+    line-height: 50px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    padding-left: 12%;
+}
+.talent-model{
+    width: 40%;
+    height: 100%;
+}
+.zero-one{
+    width: 4%;
+    padding-bottom: 3rem;
+    animation: buttomfadein 1.5s 0s ease-out;
+    opacity: 1;
+}
+.nina-name{
+    width: 60%;
+    position: relative;
+    left: -2.5%;
+    animation: leftfadein 1.7s ease-out;
+}
+.nina-info{
+    animation: leftfadein 1.8s ease-out;
+}
+.mama-papa{
+    animation: leftfadein 1.9s ease-out;
+}
+.social_button{
+    border-radius: 10rem;
+    color: #000;
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: .15rem;
+    overflow: hidden;
+    padding: 0.25rem 1rem;
+    position: relative;
+    transition: all .3s;
+    z-index: 0;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.social_button::before {
+    background-color: #d9d9d9;
+    transition: all .3s;
+    width: 0;
+    z-index: -1;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.social_button::after {
+    background-color: #fff;
+    width: 100%;
+    z-index: -2;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.social_button::after, .social_button::before {
+    border-radius: 10rem;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.s-btn{
+    height: 1.5rem;
+    border-radius: 10rem;
+    color: #000;
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: .15rem;
+    overflow: hidden;
+    padding: 0.25rem 1rem;
+    position: relative;
+    transition: all .3s;
+    z-index: 0;
+    margin-right:2rem ;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.s-btn::after{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(143, 143, 143);
+    content: "";
+    left: 0;
+    top: 0%;
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 10rem;
+    animation: opacity1fadein 1.85s ease-out;
+}
+.s-btn:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+.center-bar{
+    position: absolute;
+    top: 10%;
+    right: -30%;
+    width: 40%;
+    animation: buttomfadein 1.5s 0s ease-out;
+    opacity: 1;
+}
+.talent-model{
+    padding-right: 0%;
+    position: relative;
+}
+.nina-model{
+    position: absolute;
+    width: 80%;
+    top: -17%;
+    left: 0;
+    animation: topfadein 2.1s 0s ease-out;
+    opacity: 1;
+}
+.square{
+    position: absolute;
+    height: 23%;
+    width: auto;
+    top: 15%;
+    z-index: -1;
+    animation: rightfadein 1.5s 0s ease-out;
+    opacity: 1;
+}
+@keyframes topfadein {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    70%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes buttomfadein {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    70%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes leftfadein {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    70%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rightfadein {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    70%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes opacityfadein {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.24;
+    }
+}
+@keyframes opacity1fadein {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
